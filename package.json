@@ -1,33 +1,36 @@
 {
-  "name": "node-js-getting-started",
-  "version": "0.1.3",
-  "description": "A sample Node.js app using Express 4",
+  "name": "betovar-nodejs",
+  "version": "0.0.1",
+  "description": "A simple Node.js website using Express 4",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "start": "node index.js"
   },
   "dependencies": {
-    "bower": "^1.4.1",
-    "express": "~4.9.x"
+    "mongodb": "2.1.x",
+    "express": "4.13.x",
+    "angular": "1.4.x",
+    "jade": "1.11.x"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.1",
-    "grunt-contrib-nodeunit": "~0.4.1",
-    "grunt-contrib-uglify": "~0.5.0"
+    "bower": "1.7.x",
+    "mocha": "2.4.x",
+    "should": "8.2.x",
+    "karma": "0.13.x",
+    "less": "2.6.x"
   },
   "engines": {
-    "node": "0.12.2"
+    "node": "4.2.x"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "https://github.com/betovar/betovar-nodejs"
   },
   "keywords": [
-    "node",
-    "heroku",
-    "express"
+    "mongodb",
+    "express",
+    "angular",
+    "node"
   ],
   "license": "MIT"
 }
