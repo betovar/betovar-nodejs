@@ -4,6 +4,7 @@
   "description": "A simple Node.js website using Express 4",
   "main": "app.js",
   "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
     "start": "node app.js"
   },
   "dependencies": {
