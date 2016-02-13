@@ -2,9 +2,9 @@
   "name": "betovar-nodejs",
   "version": "0.0.1",
   "description": "A simple Node.js website using Express 4",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "mongodb": "2.1.x",
