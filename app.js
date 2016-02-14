@@ -4,7 +4,9 @@ var app = express();
 app.set('view engine', 'jade');
 app.set('port', (process.env.PORT || 3000));
 app.use(express.static('public'));
-app.use(express.static('bower_components'));
+app.use(express.static('node_modules/jquery/dist/'));
+app.use(express.static('node_modules/bootstrap/dist/'));
+//app.use(express.static('node_modules/angular/'));
 
 app.get('/', function(request, response) {
   response.render('home');
@@ -27,7 +29,7 @@ app.get('/resume', function(request, response) {
 });
 
 app.get('/about', function(request, response) {
-  response.redirect('/about');
+  response.render('about');
 });
 
 app.listen(app.get('port'), function() {

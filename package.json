@@ -5,7 +5,9 @@
   "main": "app.js",
   "dependencies": {
     "express": "4.13.x",
-    "bower": "1.7.x",
+    "bootstrap": "4.0.0-alpha.2",
+    "angular": "1.5.x",
+    "jquery": "2.2.x",
     "jade": "1.11.x"
   },
   "devDependencies": {
@@ -18,7 +20,6 @@
     "node": "4.2.x"
   },
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower install",
     "start": "node app.js"
   },
   "repository": {

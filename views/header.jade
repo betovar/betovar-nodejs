@@ -8,23 +8,22 @@ html(lang='en')
     meta(name='author', content='')
     link(rel='icon', href='favicon.ico')
     title BETOVAR
-    link(href='bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
 
   body
-    nav.navbar.navbar-default.navbar-static-top
-      .container
-        .navbar-header
-          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
+    .container
+      nav.navbar.navbar-light.bg-faded
+        button.navbar-toggler.hidden-sm-up(type='button', data-toggle='collapse', data-target='#navbar-header', aria-controls='navbar-header')
+          | ☰
+        #navbar-header.collapse.navbar-toggleable-xs
           a.navbar-brand(href='/') betovardotcom
-        #navbar.navbar-collapse.collapse
           ul.nav.navbar-nav
-            li
-              a(href='/projects') Projects
-            li
-              a(href='/resume') Resume
-            li.active
-              a(href='/') About
+            li.nav-item.active
+              a.nav-link(href='/projects') Projects
+            li.nav-item
+              a.nav-link(href='/resume') Resume
+            li.nav-item
+              a.nav-link(href='/about') About
+                span.sr-only (current)
+          form.form-inline.pull-xs-right
+            input.form-control(type='text', placeholder='Search')
