@@ -4,13 +4,11 @@
   "description": "A simple Node.js website using Express 4",
   "main": "app.js",
   "dependencies": {
-    "mongodb": "2.1.x",
     "express": "4.13.x",
-    "angular": "1.4.x",
+    "bower": "1.7.x",
     "jade": "1.11.x"
   },
   "devDependencies": {
-    "bower": "1.7.x",
     "mocha": "2.4.x",
     "should": "8.2.x",
     "karma": "0.13.x",
@@ -20,7 +18,7 @@
     "node": "4.2.x"
   },
   "scripts": {
-    "postinstall": "bower install",
+    "postinstall": "./node_modules/bower/bin/bower install",
     "start": "node app.js"
   },
   "repository": {

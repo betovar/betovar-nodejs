@@ -4,7 +4,7 @@ var app = express();
 app.set('view engine', 'jade');
 app.set('port', (process.env.PORT || 3000));
 app.use(express.static('public'));
-app.use(express.static('public/bower_components'));
+app.use(express.static('bower_components'));
 
 app.get('/', function(request, response) {
   response.render('home');
